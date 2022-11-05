@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import Head from "./components/Head";
 import Main from "./components/Main";
 import shuffleArr from './util.js';
+import './styles/style.css';
 
 const App = (props) => {
 

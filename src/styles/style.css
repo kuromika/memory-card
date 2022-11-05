@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url('../fonts/CyberpunkWaifus.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cyberpunk', 'Inconsolata', monospace;
+}
+
+
+body{
+    background-color: #10041c;
+}
+
+#root{
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 20px;
+}
+
+#logo{
+    max-width: 100%;
+    max-height: 150px;
+}
+
+header{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.scores{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 60%;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.card{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* gradient from : https: //cssgradient.io/gradient-backgrounds/ */
+    background-image: linear-gradient(135deg, #FD6585 10%, #0D25B9 100%);
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.character-name{
+    font-weight: 900;
+    font-size: large;
+}
+
+.character-image{
+    background-color: #10041c;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 700px){
+    .scores{
+        justify-content: center;
+    }
+}   
