@@ -1,9 +1,11 @@
 import React from "react";
 
-const Score = () => {
+const Score = (props) => {
     
     return (
-        <h2>Score: <span>0</span></h2>
+        <h2 className="score-header">{props.header}
+            <span className="score-number">{props.score}</span>
+        </h2>
     )
 }
 

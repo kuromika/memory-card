@@ -8,8 +8,8 @@ const Head = (props) => {
         <header>
             <h1>VA-11 HALL-A Memory</h1>
             <div className='scores'>
-                <Score></Score>
-                <Score></Score>
+                <Score header='Current Score' score={props.current}></Score>
+                <Score header='Best Score' score={props.best}></Score>
             </div>
         </header>
     )

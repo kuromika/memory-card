@@ -1,11 +1,20 @@
 import React from "react";
 import Card from "./Card";
+import uniqid from "uniqid"
 
-const Main = () => {
+const Main = (props) => {
 
     return (
-        <main className="grid">
-            <Card></Card>
+        <main>
+            <div className="grid">
+                {props.data.map((element) =>
+                    <Card char={element}
+                        shuffle={props.shuffle}
+                        update={props.update}
+                        key = {uniqid()}>
+                    </Card>)
+                }
+            </div>
         </main>
     )
 }
