@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.e827a4f2.css",
+    "main.js": "/memory-card/static/js/main.f85ed144.js",
+    "static/media/CyberpunkWaifus.ttf": "/memory-card/static/media/CyberpunkWaifus.ba63a5415922258e6f19.ttf",
+    "index.html": "/memory-card/index.html",
+    "main.e827a4f2.css.map": "/memory-card/static/css/main.e827a4f2.css.map",
+    "main.f85ed144.js.map": "/memory-card/static/js/main.f85ed144.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e827a4f2.css",
+    "static/js/main.f85ed144.js"
+  ]
+}
