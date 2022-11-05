@@ -1,10 +1,12 @@
-import './App.css';
+import Head from "./components/Head";
+import Main from "./components/Main";
 
-const App = () => {
+const App = (props) => {
 
   return (
-    <div>
-
+    <div className="app">
+      <Head></Head>
+      <Main></Main>
     </div>
   )
 }
