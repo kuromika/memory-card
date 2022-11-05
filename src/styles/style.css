@@ -38,7 +38,7 @@ header{
 .scores{
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 60%;
+    width: 70%;
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -46,10 +46,11 @@ header{
 }
 
 .grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 220px);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    gap: 10px   ;
 }
 
 .card{
@@ -59,9 +60,13 @@ header{
     /* gradient from : https: //cssgradient.io/gradient-backgrounds/ */
     background-image: linear-gradient(135deg, #FD6585 10%, #0D25B9 100%);
     align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 10px;
-    padding: 10px;
+    padding: 7px;
     border-radius: 20px;
+    width: 25vw;
+    max-width: 220px;
 }
 
 .character-name{
@@ -70,12 +75,19 @@ header{
 }
 
 .character-image{
+    width: 100%;
     background-color: #10041c;
-    border-radius: 20px;
+    border-radius: 10px;
+    
 }
 
 @media screen and (max-width: 700px){
     .scores{
         justify-content: center;
+        font-size: 2.5vw;
+    }
+
+    .character-name{
+        font-size: 3vw;
     }
 }   
